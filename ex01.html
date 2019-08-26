@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nums =[10,5,2,8,-1,6,11,14,8];
+    let max =nums[0];
+    /*----------------*/
+    function findMaxNum(arr) {
+        for(let i =0;i<=arr.length;i++){
+            if(max < nums[i]){
+                max = nums[i]
+            }
+        }document.write("The highest number is:"+max);
+    }
+    /*-------------------*/
+    findMaxNum(nums);
+</script>
+</body>
+</html>

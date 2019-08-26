@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nNum = 0, firstNum = 0, secondNum = 1;
+    let n = parseInt(prompt("press the amount of Fibonacci number:"));
+    let arr = [];
+
+    /*----------------*/
+    function printFibonacci(n) {
+        for (let i = 0; i <= n; i++) {
+            firstNum = secondNum;
+            secondNum = nNum;
+            nNum = firstNum + secondNum;
+            if (nNum < n) {
+                arr.push(nNum)
+            }
+        }
+    }
+    /*-----------------*/
+    printFibonacci(n);
+    document.write(arr);
+</script>
+</body>
+</html>
